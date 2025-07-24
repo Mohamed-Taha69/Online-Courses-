@@ -33,15 +33,15 @@ function Nav() {
         {/*  Auth Buttons */}
         <div className="flex items-center gap-5 md:gap-[30px]">
   {/* Sign Up Button */}
-  <NavLink to="/signup"><button className="text-sm">Sign Up</button></NavLink>
+  <NavLink to="/signup"><button className=" cursor-pointer text-sm">Sign Up</button></NavLink>
 
   {/* Login Button */}
-     <NavLink to="/login"><button className="bg-[#FF9500] text-white border-none px-[34px] py-[14px] rounded-md text-sm">
+     <NavLink to="/login"><button className=" cursor-pointer bg-[#FF9500] text-white border-none px-[34px] py-[14px] rounded-md text-sm">
     Login
   </button> </NavLink>
 
   {/* Hamburger Icon (Mobile Only) */}
-  <div className="md:hidden text-2xl cursor-pointer p-2" onClick={() => setIsOpen(!isOpen)}>
+  <div className="  md:hidden text-2xl cursor-pointer p-2" onClick={() => setIsOpen(!isOpen)}>
     <FaBars />
   </div>
     </div>
