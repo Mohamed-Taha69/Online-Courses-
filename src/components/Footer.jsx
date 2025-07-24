@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.container}>
-        <div sclassName={styles['footer-content']}>
+        <div className={styles['footer-content']}>
           {/* Company Info Section */}
           <div className={styles['footer-company']}>
             <div className={styles['footer-logo']}>
