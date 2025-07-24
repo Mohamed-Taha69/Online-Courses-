@@ -76,3 +76,23 @@ body {
 .read-the-docs {
   color: #888;
 } */
+ 
+.line::before {
+          content: '';
+          position: absolute;
+          top: 30%;
+          left: 30%;
+          width: 15px;
+          height: 10px;
+          border-right: 2px solid black; 
+          transform: rotate(40deg);
+        }
+      .line::after{ 
+        content: '';
+        position: absolute;
+          top: 30%;
+          right: 30%;
+          width: 15px;
+          height: 10px;
+        border-left: 2px solid black; 
+        transform: rotate(-40deg);} 

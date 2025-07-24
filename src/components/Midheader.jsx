@@ -28,10 +28,10 @@ export default function Midheader() {
           Learn from Industry Experts and Enhance Your Skills.
         </p>
         <div className="flex flex-wrap justify-center gap-4 pt-4">
-          <button className="bg-[#f59e0b] hover:bg-[#d97706] text-white md:px-5 md:py-2 px-2 py  rounded-md font-medium text-sm">
+          <button className="bg-[#f59e0b] hover:bg-[#d97706] text-white md:px-5 md:py-2 px-2 py cursor-pointer  rounded-md font-medium text-sm">
             Explore Courses
           </button>
-          <button className="border border-gray-300 px-5 py-2 rounded-md font-medium text-sm">
+          <button className="border border-gray-300 px-5 py-2 rounded-md font-medium cursor-pointer  text-sm">
             View Pricing
           </button>
         </div>
