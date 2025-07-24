@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.container}>
-        <div className={styles['footer-content']}>
+        <div sclassName={styles['footer-content']}>
           {/* Company Info Section */}
           <div className={styles['footer-company']}>
             <div className={styles['footer-logo']}>
@@ -23,18 +23,18 @@ const Footer = () => {
             <div className={styles['nav-column']}>
               <h3>Home</h3>
               <ul>
-                <li><a href="/benefits">Benefits</a></li>
-                <li><a href="/courses">Our Courses</a></li>
-                <li><a href="/testimonials">Our Testimonials</a></li>
-                <li><a href="/faq">Our FAQ</a></li>
+                <li><a>Benefits</a></li>
+                <li><a>Our Courses</a></li>
+                <li><a>Our Testimonials</a></li>
+                <li><a>Our FAQ</a></li>
               </ul>
             </div>
             <div className={styles['nav-column']}>
               <h3>About Us</h3>
               <ul>
-                <li><a href="/company">Company</a></li>
-                <li><a href="/achievements">Achievements</a></li>
-                <li><a href="/goals">Our Goals</a></li>
+                <li><a>Company</a></li>
+                <li><a>Achievements</a></li>
+                <li><a>Our Goals</a></li>
               </ul>
             </div>
             <div className={styles['nav-column']}>
