@@ -1,6 +1,6 @@
 import React from 'react'
 import Auth from '../components/Auth'
-export default function Login() {
+  function LoginPage() {
   return (
    
    <>  
@@ -10,3 +10,4 @@ export default function Login() {
    </>
   )
 }
+export default LoginPage

@@ -5,7 +5,7 @@ import AboutPage from "../pages/About";
 import CoursesPage from "../pages/Courses";
 import ContactPage from "../pages/Contact";
 import PricingPage from "../pages/Pricing";
- 
+import LoginPage from "../pages/Login";   
 
 import RouteLayout from "../pages/Layout";
  
@@ -19,6 +19,7 @@ const router = createBrowserRouter(createRoutesFromElements(
     <Route path="/courses" element={<CoursesPage/>} />
      <Route path="/contact" element={<ContactPage/>} />
      <Route path="/pricing" element={<PricingPage/>} />
+      <Route path="/login" element={<LoginPage/>} />
 
     <Route path="*" element={<div>404 Not Found</div>} />
     </Route>

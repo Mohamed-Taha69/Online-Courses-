@@ -1,7 +1,7 @@
 import React from 'react'
 import Google from '../images/Google__G__logo.svg.webp'
 import profileImg from '../images/profileImg.jpg'
-export default function Auth() {
+ function Auth() {
   return (
     <> 
       <section className="w-full px-1 md:px-4 py-16 grid grid-cols-1 md:grid-cols-2 gap-10">
@@ -79,3 +79,4 @@ export default function Auth() {
     </>
   )
 }
+export default Auth

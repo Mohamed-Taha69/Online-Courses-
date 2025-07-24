@@ -36,9 +36,9 @@ function Nav() {
   <button className="text-sm">Sign Up</button>
 
   {/* Login Button */}
-  <button className="bg-[#FF9500] text-white border-none px-[34px] py-[14px] rounded-md text-sm">
+     <NavLink to="/login"><button className="bg-[#FF9500] text-white border-none px-[34px] py-[14px] rounded-md text-sm">
     Login
-  </button>
+  </button> </NavLink>
 
   {/* Hamburger Icon (Mobile Only) */}
   <div className="md:hidden text-2xl cursor-pointer p-2" onClick={() => setIsOpen(!isOpen)}>
