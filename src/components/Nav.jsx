@@ -33,7 +33,7 @@ function Nav() {
         {/*  Auth Buttons */}
         <div className="flex items-center gap-5 md:gap-[30px]">
   {/* Sign Up Button */}
-  <button className="text-sm">Sign Up</button>
+  <NavLink to="/signup"><button className="text-sm">Sign Up</button></NavLink>
 
   {/* Login Button */}
      <NavLink to="/login"><button className="bg-[#FF9500] text-white border-none px-[34px] py-[14px] rounded-md text-sm">
