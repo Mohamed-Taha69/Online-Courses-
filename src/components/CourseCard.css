@@ -1,0 +1,139 @@
+/* start courses */
+.course-card {
+    max-width: 1596px;
+    margin: 40px auto;
+    padding: 50px;
+    border: 1px solid #FFFFFF;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+
+  .course-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: 20px;
+  }
+
+  .text-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .text-section p {
+    color: #59595A;
+    max-width: 1286px;
+  }
+
+  .view-btn {
+    background-color: #FCFCFD;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  .course-images {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+    max-height: 228px;
+  }
+
+  .course-images img {
+    width: 33%;
+    max-height: 422px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  .course-meta {
+    display: flex;
+    gap: 20px;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 30px;
+  }
+  .meta-top{
+    display: flex;
+    flex-direction: row;
+  }
+  .course-meta .duration , .course-meta .level    {
+    border: 1px solid #F1F1F3;
+    border-radius: 8px;
+    height: 43px;
+    width: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+.course-meta .author {
+margin-left: auto;
+display: flex;
+align-items: center;
+}
+  .curriculum h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .modules {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .module {
+    flex: 1;
+    min-width: 140px;
+    background-color: #f8f8f8;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+  }
+
+  .module span {
+    display: block;
+    font-weight: bold;
+    font-size: 20px;
+    color: #000;
+    margin-bottom: 5px;
+  }
+
+  .module p {
+    font-size: 14px;
+    color: #333;
+  }
+/* Responsive design */
+ @media (max-width: 1024px) {
+
+}
+
+@media (max-width: 600px) {
+.course-header{
+display: flex;
+flex-direction: column;
+gap: 10PX;
+}
+.curriculum .modules{
+display: flex;
+flex-direction: column;
+align-items: start;
+}
+.module span {
+display: flex;
+align-items: start;
+}
+.curriculum h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+.course-meta{
+flex-direction: column;
+ gap: 10px;
+}
+
+}
+
+/* end courses */

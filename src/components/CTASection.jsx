@@ -1,7 +1,7 @@
 
 function CTASection() {
   return (
-    <section className="py-10 px-5 bg-white">
+    <section className="py-10 px-5 mb-5 bg-white">
      <div className="flex flex-wrap md:flex-nowrap flex-col md:flex-row items-start md:items-center text-left md:text-left gap-[40px] md:gap-[300px]">
 
         {/* CTA Text */}
@@ -15,7 +15,7 @@ function CTASection() {
         </div>
 
         {/* CTA Button */}
-        <button className="px-6 py-3 bg-[#FF9500] text-white rounded-md hover:bg-[#e08000] transition duration-300 whitespace-nowrap">
+        <button className=" px-6 py-3 bg-[#FF9500] text-white rounded-md hover:bg-[#e08000] transition duration-300 whitespace-nowrap">
           Join Now
         </button>
       </div>
