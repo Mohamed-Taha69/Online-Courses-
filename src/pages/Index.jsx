@@ -4,6 +4,7 @@ import Pricing from '../components/Pricing'
 import Midheader from '../components/Midheader'
 import Testimonials from '../components/Testimonials'
 import Benefits from '../components/Benefits'
+import CoursesSection from '../components/CoursesSection';
 
 
 function HomePage() {
@@ -12,6 +13,7 @@ function HomePage() {
       <Midheader/>
       <Testimonials/>
       <Benefits/>
+      <CoursesSection />
       <Pricing/>
       <Faq/>
     </div>

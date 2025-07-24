@@ -1,11 +1,15 @@
-import React from 'react'
+import React from 'react';
+import CoursesTitle from '../components/CoursesTitle';
+import CoursesList from '../components/CoursesList';
 
 function CoursesPage() {
   return (
-    <div>
-        <h2>hellow from courses page</h2>
-    </div>
-  )
+    <>
+    <CoursesTitle />
+    <CoursesList />
+    </> 
+   
+  );
 }
 
-export default CoursesPage
+export default CoursesPage;
