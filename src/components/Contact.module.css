@@ -1,0 +1,354 @@
+
+.Contact {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.contact-container-1 {
+  display: flex;
+  justify-content: center;
+  padding-top: 150px;
+  border-bottom: 1px solid #E4E4E7;
+}
+
+.text-container {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 20px 50px 20px;
+}
+.text-left {
+  flex: 1;
+  min-width: 250px;
+}
+.text-right {
+  flex: 2;
+  min-width: 300px;
+  max-width: 748px;
+}
+.contact-header {
+  max-width: 748px;
+  height: auto;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 48px;
+  line-height: 150%;
+  align-self: flex-start;
+  font-weight: 600;
+  color: #262626;
+}
+.contact-paragraph {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 150%;
+  max-width: 748px;
+  color: #59595A;
+  margin: 0;
+}
+.contact-container-2 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  max-width: 1596px; 
+  margin: 100px auto;
+  background-color: #FFFFFF;
+  border-radius: 12px;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 80px; 
+}
+h5 {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 18px;
+  margin: 0; 
+}
+.elements {
+  display: flex;
+  flex-direction: column;
+  gap: 30px; 
+}
+.elements-1,
+.elements-2,
+.elements-3 {
+  display: flex;
+  gap: 30px; 
+  max-width: 916px;
+}
+.element-1-1,
+.element-1-2,
+.element-2-1,
+.element-2-2 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px; 
+  max-width: 443px;
+}
+.element-3 {
+  display: flex;
+  flex-direction: column;
+  gap: 16px; 
+}
+.element-3 input {
+  max-width: 916px;
+  height: 68px; 
+}
+.text-container-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 16px; 
+}
+.text-container-2 textarea {
+  max-width: 916px;
+  height: 170px;
+  width: 100%;
+}
+input,
+textarea {
+  padding: 24px 20px;
+  font-size: 18px;
+  font-family: "Be Vietnam Pro", sans-serif;
+  border: 1px solid #F1F1F3;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  width: 100%; 
+  margin: 0; 
+}
+.send-button {
+  width: fit-content;
+  padding: 14px 28px;
+  background-color: #ff9000;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  border: #000 solid 1px;
+  border-radius: 8px;
+  align-self: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.send-button:hover {
+  background-color: #e88000;
+}
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 80px; 
+  justify-content: flex-start;
+  border-left: 1px solid #F1F1F3;
+  align-items: center;
+}
+.buttons-container img{
+  width: 52px;
+  height: 52px;
+  padding: 14px;
+  background-color: #F7F7F8;
+  border: 1px solid #F1F1F3;
+  border-radius: 8px;
+}
+.email-btn,
+.phone-btn,
+.location-btn,
+.socials-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 360px;
+  height: 154.75px;
+  width: 100%;
+  gap: 16px;
+  padding: 30px;
+  background-color: #FCFCFD;
+  border: 1px solid #F1F1F3;
+  border-radius: 8px;
+}
+.email-btn,
+.phone-btn,
+.location-btn,
+.socials-btn p{
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+}
+.socials-row{
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+.icons {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.icons:hover {
+  opacity: 0.8;
+}
+.socials-icons {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.socials-icons:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .contact-container-1 {
+    padding-bottom: 30px;
+    gap: 16px;
+  }
+  .contact-header{
+    font-size: 28px;
+  }
+  .contact-paragraph {
+    font-size: 14px;
+    max-width: 100%; 
+  }
+  .contact-container-1 {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+  }
+  .contact-container-2 {
+    grid-template-columns: 1fr;
+    gap: 0;
+    padding: 0;
+    margin: 50px auto;
+  }
+  .text-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 0 30px 0;
+  }
+  .text-left, .text-right {
+    min-width: 100%;
+  }
+ .elements-1,
+  .elements-2 {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .elements-3{
+    gap: 12px;
+  }
+  .element-1-1,
+  .element-1-2,
+  .element-2-1,
+  .element-2-2,
+  .element-3, 
+  .text-container-2 { 
+    width: 100%;
+    max-width: 100%; 
+    align-items: flex-start; 
+  }
+  input,
+  textarea {
+    padding: 20px;
+    font-size: 14px;
+    max-width: 100%; 
+    width: 100%;
+    
+  }
+  .send-button {
+    width: 100%;
+    padding: 20px;
+    font-size: 14px;
+  }
+  .buttons-container,.contact-form ,.socials-btn{
+    padding: 30px;
+    width: 100%;
+    align-items: center;
+  }
+.email-btn,
+.phone-btn,
+.location-btn,
+.socials-btn{
+    min-width: 298px;
+    max-width: 298px;
+}
+  .elements {
+    gap: 20px;
+    width: 100%;
+}
+h5{
+  font-size: 14px;
+}
+}
+@media (max-width: 390px) {
+
+  .contact-container-1 {
+    padding-top: 30px;
+    padding-bottom: 15px;
+    gap: 15px;
+  }
+  .contact-header {
+    font-size: 26px; 
+  }
+  .contact-paragraph {
+    font-size: 14px; 
+    padding: 0 10px; 
+  }
+  .text-container {
+    padding: 0 10px 15px 10px; 
+  }
+  .contact-form {
+    padding: 20px; 
+    gap: 25px; 
+  }
+  h5 {
+    font-size: 13px; 
+  }
+  .elements-1,
+  .elements-2,
+  .elements-3 {
+    gap: 15px; 
+  }
+  .element-1-1,
+  .element-1-2,
+  .element-2-1,
+  .element-2-2 {
+    gap: 10px; 
+  }
+  input,
+  textarea {
+    padding: 14px 16px; 
+    font-size: 14px; 
+  }
+  .send-button {
+    width: 95%; 
+    padding: 14px;
+    font-size: 14px;
+  }
+  .buttons-container {
+    padding: 20px; 
+    gap: 25px; 
+    border: none;
+  }
+  .email-btn,
+  .phone-btn,
+  .location-btn,
+  .socials-btn {
+    padding: 15px; 
+    max-width: 100%; 
+  }
+  .buttons-container img {
+    width: 44px; 
+    height: 44px;
+    padding: 12px;
+  }
+  .socials-row {
+      gap: 8px; 
+  }
+}
+
+
