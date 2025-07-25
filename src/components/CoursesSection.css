@@ -45,6 +45,11 @@
     max-width: 933px;
     gap: 6px;
   }
+  .custom-text-section h1 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #000; 
+}
 
   .custom-cards {
     display: grid;
