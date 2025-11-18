@@ -17,6 +17,7 @@ import img12 from '../images/6a02446972bc1a0fd30ebbfb230fa3093ba17421.png';
 import img13 from '../images/659379db66c2dcd8d52c62c7f2f909141be3edc8.png';
 import img14 from '../images/bc6563174bf9dbeda7ba855a7fc1cb326a5eef01.png';
 import img15 from '../images/91670be6f4d88d8d0bca9827af448ccc554331f4.png';
+import img16 from '../images/5e3f628bb4ab95d141f4843685cb44020170f0b3.png';
 
 // Map الصور
 const imageMap = {
@@ -34,7 +35,8 @@ const imageMap = {
   "6a02446972bc1a0fd30ebbfb230fa3093ba17421.png": img12,
   "659379db66c2dcd8d52c62c7f2f909141be3edc8.png": img13,
   "bc6563174bf9dbeda7ba855a7fc1cb326a5eef01.png": img14,
-  "91670be6f4d88d8d0bca9827af448ccc554331f4.png": img15
+  "91670be6f4d88d8d0bca9827af448ccc554331f4.png": img15,
+  "5e3f628bb4ab95d141f4843685cb44020170f0b3.png": img16
 };
 
 // بيانات الكورسات
@@ -132,6 +134,26 @@ const courses = [
       "JavaScript Basics",
       "Building Responsive Websites",
       "Introduction to Bootstrap and React"
+    ]
+  },
+  {
+    title: "Acne Classification with AI",
+    description: "Master the fundamentals of AI-powered medical image classification. Learn to build deep learning models for acne detection and classification using Python, TensorFlow, and computer vision techniques.",
+    images: [
+      "5e3f628bb4ab95d141f4843685cb44020170f0b3.png",
+      "659379db66c2dcd8d52c62c7f2f909141be3edc8.png",
+      "bc6563174bf9dbeda7ba855a7fc1cb326a5eef01.png"
+    ],
+    duration: "8 Weeks",
+    level: "Advanced",
+    author: "Dr. Sarah Chen",
+    modules: [
+      "Introduction to Medical Image Analysis",
+      "Deep Learning Fundamentals for Computer Vision",
+      "Acne Detection and Classification Techniques",
+      "Building CNN Models with TensorFlow",
+      "Model Training and Evaluation",
+      "Deployment and Real-world Applications"
     ]
   }
 ];
