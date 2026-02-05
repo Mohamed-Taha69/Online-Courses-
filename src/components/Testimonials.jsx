@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './testimonials.module.css';
+
 import person1 from '../images/person-1.png';
 import person2 from '../images/person-2.png';
 import person3 from '../images/person-3.png';
@@ -30,28 +30,28 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <div className={styles.container}>
-      <div className={styles.header}>
+    <div className="max-w-[1200px] mx-auto p-5 lg:p-10">
+      <div className="flex justify-between items-center mb-10">
         <div>
-          <h1>Our Testimonials</h1>
-          <p className={styles['header-text']}>
+          <h1 className="text-[32px] md:text-[36px] lg:text-[40px] font-semibold text-[#333]">Our Testimonials</h1>
+          <p className="max-w-[600px] mb-5 leading-[1.6] text-[#666]">
             Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et.
             Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.
           </p>
         </div>
-        <button className={styles['view-all']} onClick={() => console.log('View all testimonials')}>View All</button>
+        <button className="text-[#333] font-medium no-underline text-base bg-transparent border-none cursor-pointer p-0" onClick={() => console.log('View all testimonials')}>View All</button>
       </div>
 
-      <div className={styles['testimonials-grid']}>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-[30px]">
         {testimonials.map((testimonial, index) => (
-          <div className={styles['testimonial-card']} key={index}>
-            <p className={styles['testimonial-content']}>{testimonial.content}</p>
-            <div className={styles['testimonial-footer']}>
-              <div className={styles['user-info']}>
-                <img src={testimonial.image} alt={testimonial.name} className={styles['user-avatar']} />
-                <span className={styles['user-name']}>{testimonial.name}</span>
+          <div className="bg-white rounded-xl p-[30px] shadow-[0_4px_12px_rgba(0,0,0,0.05)] flex flex-col" key={index}>
+            <p className="mb-5 leading-[1.6]">{testimonial.content}</p>
+            <div className="flex justify-between items-center mt-auto">
+              <div className="flex items-center gap-3">
+                <img src={testimonial.image} alt={testimonial.name} className="w-12 h-12 rounded-full object-cover" />
+                <span className="font-semibold text-base">{testimonial.name}</span>
               </div>
-              <button className={styles['read-more']} onClick={() => console.log(`Read full story of ${testimonial.name}`)}>Read Full Story</button>
+              <button className="text-[#333] no-underline font-medium text-sm bg-transparent border-none cursor-pointer p-0" onClick={() => console.log(`Read full story of ${testimonial.name}`)}>Read Full Story</button>
             </div>
           </div>
         ))}

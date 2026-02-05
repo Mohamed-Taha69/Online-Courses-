@@ -1,11 +1,18 @@
 // src/components/Nav.jsx
 import { useState } from 'react'
-import {  NavLink  } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import { FaBars } from 'react-icons/fa'
 import logo from '../images/Logo.png'
 
 function Nav() {
   const [isOpen, setIsOpen] = useState(false)
+
+  // Helper function for nav link classes
+  const navLinkClasses = ({ isActive }) =>
+    `block px-4 py-2 md:py-1 text-[#262626] font-medium rounded-lg transition-all duration-300 decoration-none cursor-pointer
+    hover:bg-[#FF9500] hover:text-white hover:-translate-y-px hover:shadow-[0_2px_8px_rgba(255,149,0,0.2)]
+    ${isActive ? 'bg-[#ff9500] text-white' : ''}
+    md:px-4`
 
   return (
     <header className="bg-white shadow-sm rounded w-full">
@@ -18,16 +25,15 @@ function Nav() {
 
           {/* Navigation Links */}
           <ul
-            className={`${
-              isOpen ? 'flex' : 'hidden'
-            } flex-col absolute top-full left-0 w-full bg-white px-4 sm:px-6 py-4 shadow-lg z-50 
+            className={`${isOpen ? 'flex' : 'hidden'
+              } flex-col absolute top-full left-0 w-full bg-white px-4 sm:px-6 py-4 shadow-lg z-50 
             md:flex md:flex-row md:static md:shadow-none md:p-0 md:gap-4 lg:gap-[26px] border-t border-gray-100 md:border-t-0`}
           >
-            <NavLink to="/" className="nav-link py-2 md:py-1" onClick={() => setIsOpen(false)}>Home</NavLink>
-            <NavLink to="/courses" className="nav-link py-2 md:py-1" onClick={() => setIsOpen(false)}>Courses</NavLink>
-            <NavLink to="/about" className="nav-link py-2 md:py-1" onClick={() => setIsOpen(false)}>About</NavLink>
-            <NavLink to="/pricing" className="nav-link py-2 md:py-1" onClick={() => setIsOpen(false)}>Pricing</NavLink>
-            <NavLink to="/contact" className="nav-link py-2 md:py-1" onClick={() => setIsOpen(false)}>Contact</NavLink>
+            <NavLink to="/" className={navLinkClasses} onClick={() => setIsOpen(false)}>Home</NavLink>
+            <NavLink to="/courses" className={navLinkClasses} onClick={() => setIsOpen(false)}>Courses</NavLink>
+            <NavLink to="/about" className={navLinkClasses} onClick={() => setIsOpen(false)}>About</NavLink>
+            <NavLink to="/pricing" className={navLinkClasses} onClick={() => setIsOpen(false)}>Pricing</NavLink>
+            <NavLink to="/contact" className={navLinkClasses} onClick={() => setIsOpen(false)}>Contact</NavLink>
           </ul>
         </div>
 

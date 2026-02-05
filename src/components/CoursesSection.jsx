@@ -1,48 +1,48 @@
 import React from "react";
-import "./CoursesSection.css";
+
 
 const CoursesSection = () => {
   return (
-      <div className="custom-section-wrapper">
-        <div className="custom-header">
-          <div className="custom-text-section">
-            <h1>Our Courses</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit
-              id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget
-              habitasse in velit fringilla feugiat senectus in.
-            </p>
-          </div>
-          <button className="custom-view-btn">View All</button>
+    <div className="w-full max-w-[1279px] mx-auto px-4 md:px-[15px]">
+      <div className="flex flex-col md:flex-row justify-between items-end mb-[60px] w-full gap-5 md:gap-0">
+        <div className="flex flex-col max-w-[933px] gap-1.5">
+          <h1 className="text-4xl font-bold text-black">Our Courses</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit
+            id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget
+            habitasse in velit fringilla feugiat senectus in.
+          </p>
         </div>
-
-        <div className="custom-cards">
-          {courses.map((course, index) => (
-            <div className="custom-card" key={index}>
-              <div className="custom-course-images">
-                <img src={course.image} alt={course.title} />
-              </div>
-              <div className="custom-course-meta">
-                <div className="custom-meta-top">
-                  <div className="custom-duration">{course.duration}</div>
-                  <div className="custom-level">{course.level}</div>
-                </div>
-                <div className="custom-author">By {course.author}</div>
-              </div>
-              <div className="custom-title">{course.title}</div>
-              <div className="custom-desc">{course.description}</div>
-              <div className="custom-button">Get it Now</div>
-            </div>
-          ))}
-        </div>
+        <button className="self-end bg-[#fcfcfd] border-none px-3 py-2 rounded-lg cursor-pointer">View All</button>
       </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-5 justify-center">
+        {courses.map((course, index) => (
+          <div className="bg-white border border-[#f1f1f3] rounded-xl overflow-hidden p-[30px] md:p-[50px] flex flex-col gap-6" key={index}>
+            <div className="w-full">
+              <img src={course.image} alt={course.title} className="w-full h-[172px] md:h-[250px] rounded-[10px] object-cover" />
+            </div>
+            <div className="flex flex-wrap gap-5 text-sm text-[#555] mb-[30px]">
+              <div className="flex gap-2.5">
+                <div className="border border-[#F1F1F3] rounded-lg h-[43px] w-[110px] flex items-center justify-center">{course.duration}</div>
+                <div className="border border-[#F1F1F3] rounded-lg h-[43px] w-[110px] flex items-center justify-center">{course.level}</div>
+              </div>
+              <div className="ml-auto flex items-center">By {course.author}</div>
+            </div>
+            <div className="text-lg font-semibold">{course.title}</div>
+            <div className="text-sm text-[#333]">{course.description}</div>
+            <div className="p-3 bg-[#f8f8f8] text-center rounded-lg cursor-pointer font-semibold">Get it Now</div>
+          </div>
+        ))}
+      </div>
+    </div>
   );
 };
 
-const courses = [ 
+const courses = [
   {
     image: "src/images/dfd14f5a2a1b8774ac452db1e2b7551ba9f4f9f22.png"
-,
+    ,
     duration: "4 Weeks",
     level: "Beginner",
     author: "John Smith",
